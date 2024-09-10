@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link rel="stylesheet" href="cssforhobbies.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Hobby Page</h1>
+    </header>
+
+    <section class="hobbies">
+        <div class="hobby" onclick="showDetails('hobby1')">
+            <h2>Fitness</h2>
+            <p>Click to learn more</p>
+        </div>
+        <div class="hobby" onclick="showDetails('hobby2')">
+            <h2>Reading</h2>
+            <p>Click to learn more</p>
+        </div>
+        <div class="hobby" onclick="showDetails('hobby3')">
+            <h2>Photography</h2>
+            <p>Click to learn more</p>
+        </div>
+        <div class="hobby" onclick="showDetails('hobby4')">
+            <h2>Cooking</h2>
+            <p>Click to learn more</p>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="details hidden">
+        <button class="close-btn" onclick="hideDetails()">Close</button>
+        <div id="hobby1" class="hobby-detail">
+            <h2>Fitness</h2>
+            <p>Fitness is a big part of my life. I love working out, trying new exercises, and staying healthy. It helps me stay energized and focused.</p>
+        </div>
+        <div id="hobby2" class="hobby-detail">
+            <h2>Reading</h2>
+            <p>I enjoy reading books on various topics, including fiction, non-fiction, and personal development. It’s a great way to learn and relax.</p>
+        </div>
+        <div id="hobby3" class="hobby-detail">
+            <h2>Photography</h2>
+            <p>Photography allows me to capture the beauty of the world around me. I love experimenting with different styles and techniques.</p>
+        </div>
+        <div id="hobby4" class="hobby-detail">
+            <h2>Cooking</h2>
+            <p>Cooking is a creative outlet for me. I enjoy experimenting with new recipes and ingredients to create delicious meals.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
